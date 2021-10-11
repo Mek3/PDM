@@ -1,0 +1,2 @@
+Cómo evito que haga salto de línea para sm?
+Como meter texto variable en un contenedor?

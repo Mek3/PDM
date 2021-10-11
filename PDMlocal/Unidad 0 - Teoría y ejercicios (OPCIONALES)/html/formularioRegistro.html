@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario de registro</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        
+        <h2>Formulario de registro</h2>
+        <p>Escribe tus datos de usaurio en el siguiente formulario 
+            y por último aprieta el botón enviar.
+        </p>
+
+        <form action="URLtratar datos" method="POST">
+            <label for="user">Usuario: </label>
+            <input name="user" type="text" size=24/></br></br>
+
+            <label for="cod">Contraseña: </label>
+            <input name="cod" type="text" size=24/></br></br>
+            
+            <label for="nombre">Nombre completo: </label>
+            <input name="nombre" type="text" size=24/></br></br>
+
+            <label for="direccion">Dirección: </label>
+            <input name="direccion" type="text" size=24/></br></br>
+
+            <label for="ciudad">Ciudad: </label>
+            <select name="ciudad" size=1>
+                <option value="A Coruña">A Coruña</option>
+                <option value="Álava">Álava</option>
+                <option value="Albacete">Albacete</option>
+                <option value="Alicante" selected>Alicante </option>
+                <option value="Almería">Almería</option>
+                <option value="Asturias">Asturias</option>
+                <!-- resto de ciudades... -->
+            </select></br></br>
+            
+            <label for="tipoCliente">Tipo de Cliente: </label></br>
+            <input name="tipoCliente" type="radio" value="Particular" checked/>Particular</br>
+            <input name="tipoCliente" type="radio" value="Profesional"/>Profesional</br></br>
+
+            <p>
+                <label for="comentarios">Comentarios: </label></br>
+                <textarea name="comentarios"  cols=40 rows=4></textarea></br></br>
+            </p>
+
+            <input name="aceptarterminos" type="checkbox" value="aceptar"/>Aceptar los términos y condiciones de uso</br></br>
+            <input type="submit" value="Enviar"/> 
+            <input type="submit" value="Borrar formulario"/>
+
+        </form>
+    </body>
+</html>

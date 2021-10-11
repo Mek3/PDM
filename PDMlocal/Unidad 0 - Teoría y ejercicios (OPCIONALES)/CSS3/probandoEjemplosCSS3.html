@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <style>
+       #form1 input:valid { background:lightgreen; }
+       #form1 input:invalid  { background-color:red; }
+       #form1 specialInput input:valid { border-radius:green; }
+    </style>
+ </head>
+ <body>
+    <form id="form1" name="form1" method="post" action="formaction.php">
+       <p>Nombre:
+        <input type="text" name="nombre" id="nombre" required/>
+       </p>
+       <p>Usuario:
+          <specialInput>
+          <input type="text" name="usuario" id="usuario" required/>
+          </specialInput>
+        </p>
+    </form>
+ </body>

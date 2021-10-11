@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>Probando html 5</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            mark{
+                background-color: red;
+            }
+        </style>
+    </head>
+    <article>
+        <section>
+            <p>Hola mundo</p>
+            <label for="busqueda">Búsqueda con histórico: </label>
+            <input type="search" name="busqueda" id="busqueda" results="5"/> </br></br>
+
+            <label for="referer">Nombre</label>
+            <input id="referer" name="referer" type="text"
+                placeholder="Escribe tu nombre completo" autofocus /></br></br>
+
+            <label for="diasemana">Día de la semana:</label>
+            <input type="text" name="diasemana" id="diasemana" list="dias"/>
+            <datalist id="dias">
+                <option value="Lunes" />
+                <option value="Martes" />
+                <option value="Miércoles" />
+                <option value="Jueves" />
+                <option value="Viernes" />
+                <option value="Sábado" />
+                <option value="Domingo" />
+            </datalist></br></br>
+
+            <label for="cp">Código Postal</label>
+            <input id="cp" name="cp" pattern="[\d]{5}(-[\d]{4})" /></br></br>
+
+        </section>
+        <section>
+            <h1>Resultados de la búsqueda de la palabra ’anillo’</h1>
+            <ol>
+                <li>El señor de los <mark>anillo</mark>s </li>
+                <li>el cliente compró este <mark>anillo</mark></li>
+            </ol>
+
+        </section></br></br>
+        <section>
+            <audio src="Morat - Cómo Te Atreves (320 kbps).mp3" controls></audio></br></br>
+            <audio id="player" src="Morat - Cómo Te Atreves (320 kbps).mp3"></audio>
+            <button onclick="document.getElementById('player').play();">Reproducir</button>
+            <button onclick="document.getElementById('player').pause();">Pausa</button>
+            <button onclick="document.getElementById('player').volume += 0.1;">Subir Volumen</button>
+            <button onclick="document.getElementById('player').volume -= 0.1;">Bajar Volumen</button>
+        </section></br></br>
+        <section>
+            <script>
+                if (navigator.geolocation)
+                {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                }
+
+                function showPosition( position )
+                {
+                    var lat = position.coords.latitude;
+                    var lng = position.coords.longitude;
+
+                    alert( "Latitud: " + lat + ", longitud: " + lng );
+                }
+            </script>
+        </section>
+    </article>
+</html>
+

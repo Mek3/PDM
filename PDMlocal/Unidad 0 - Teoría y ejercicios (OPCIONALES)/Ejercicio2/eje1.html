@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Ejercicio 1</Title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        
+        <form>
+           <label for="opUno"> <strong>Operador 1:</strong></label> 
+           <input id="opUno" type="text" size=24></br></br>
+           <label for="opDos"> <strong>Operador 2:</strong></span></label> 
+           <input id="opDos" type="text" size=24></br></br>
+           <label>Resultado: <span id="result" ></span></label></br></br>
+           <input type="button" value="Suma"  onclick="sumar()">
+           <input id="resta" type="button" value="Resta" onclick="restar()">
+           <input id="multi" type="button" value="Multiplicación" onclick="multiplicar()">
+           <input id="div" type="button" value="División" onclick="dividir()">
+           <input id="entrada" onkeyup="escribir2()">
+                <div id="cont3"></div>
+            <script>
+            function escribir2() {
+            valor = document.getElementById('entrada').value;
+            document.getElementById('cont3').innerHTML=' '+valor;} 
+            </script>
+        </form>
+        <script type="text/javascript">
+            const result = document.getElementById('result');
+            
+            
+            function sumar(){
+                b= document.getElementById('opDos').value;
+                a= document.getElementById('opUno').value; 
+                
+                var suma = parseFloat(a) + parseFloat(b);
+                result.innerHTML = suma;
+            }
+            function restar(){
+                b= document.getElementById('opDos').value;
+                a= document.getElementById('opUno').value; 
+                
+                var resta = parseFloat(a) - parseFloat(b);
+                result.innerHTML = resta ;
+            }
+            function multiplicar(){
+                b= document.getElementById('opDos').value;
+                a= document.getElementById('opUno').value; 
+              
+                var multi = parseFloat(a) * parseFloat(b);
+                result.innerHTML = multi;
+           }
+           function dividir(){
+                b= document.getElementById('opDos').value;
+                a= document.getElementById('opUno').value; 
+               
+                var divi = parseFloat(a) / parseFloat(b);
+                result.innerHTML = divi;
+           }
+
+        </script>
+
+    </body>
+</html>

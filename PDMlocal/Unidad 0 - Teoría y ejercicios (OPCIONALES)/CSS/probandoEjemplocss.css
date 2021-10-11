@@ -1,0 +1,16 @@
+H1{
+    color: blue;
+    text-align: center
+}
+.hola span {
+    /* estilos CSS */
+    color:red; 
+    text-decoration: double;
+    text-align: end;
+}
+
+.adios{
+    font-weight: bold; 
+    font-style: italic;
+    color:red; 
+}
