@@ -11,10 +11,33 @@
     <title>Hello, world!</title>
     <style>
         
-        H1,p { text-align: center}
+        H1,p, a { text-align: center}
         .column1 {
             background-color: rgb(126, 119, 119);
             height: 50px;
+            text-align: center;
+        }
+
+        .column2 { 
+                text-align: left;
+        }
+        .column3 { 
+                text-align: right;
+         }
+        .centrado{
+            margin: 10px auto 10px;
+            display: block;
+            height: 300px;
+        }
+        .centradob{
+            margin: 10px auto 10px;
+            text-align: center;
+            color: white;
+            display: block;
+        }
+        .salto {
+           background-color: white;
+           height: 10px;
         }
         
     </style>
@@ -22,11 +45,11 @@
     <body>
         <div class="container"> 
             <div class="row">
-                <nav class="navbar navbar-dark bg-primary">
+                <nav class="nav navbar-dark bg-primary">
                     <a href="Ejercicio01.html" class="btn btn-primary">&lt;</a>
-                    <a class="navbar-brand" href="#">Más información</a>
+                    <p class="centradob"><b>Más información</b></p>
                 </nav>
-                </div>
+            </div>
                 <div class="row">
                     <div class="row">
                     <div> 
@@ -40,29 +63,30 @@
                         <p> Texto Texto Texto Texto Texto Texto Texto</p>
                     </div>
                     </div>
-                    <div class="row"> 
-                        <img src="imagenboostrap.PNG">
+                    <div class="centrado row"> 
+                        <img  src="imagenboostrap.PNG" class="centrado"  alt="Imagen del logo boostrap">
                      </div>
                      <div class="row">
                         <div class="column2 col-6 col-md-4">
-                           <a href="Ejercicio01.html" class="btn btn-secondary">&lt;Volver</a>
+                           <a href="Ejercicio01.html" class="btn btn-secondary btn-lg">&lt;Volver</a>
                         </div>
                         <div class="column3 col-6 col-md-4 offset-md-4">
                             <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button class=" btn btn-secondary dropdown-toggle btn-lg" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     Acciones
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Guardar favorito</a></li>
-                                <li><a class="dropdown-item" href="#">Exportar a PDF</a></li>
-                                <li><a class="dropdown-item" href="#">Imprimir</a></li>
-                                <li><a class="dropdown-item" href="#">Compartir</a></li>
+                                    <li><a class="dropdown-item" href="#">Guardar favorito</a></li>
+                                    <li><a class="dropdown-item" href="#">Exportar a PDF</a></li>
+                                    <li><a class="dropdown-item" href="#">Imprimir</a></li>
+                                    <li><a class="dropdown-item" href="#">Compartir</a></li>
                                 </ul>
                             </div>
                         </div>
                      </div>
                     </div>
                      <div class="row"> 
+                        <div class="salto"></div>
                         <div class="column1"></div>
                      </div>
                 
