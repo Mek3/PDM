@@ -1,2 +1,2 @@
 # PDM
-Varios ejercicios realizados: Bootstrap, HTML, Ionic, React Native
+Varios ejercicios realizados: Bootstrap, HTML y Css.
